@@ -1,0 +1,9 @@
+{% block content %}
+<h1> Market </h1>
+
+{% for item in item_list %}
+<a href="/market/{{ item.id }}">
+    <h2>{{ item.id }} {{ item.item_text }}</h2>
+</a>
+{% endfor %}
+{% endblock %}

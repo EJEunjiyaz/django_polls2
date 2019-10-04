@@ -1,0 +1,7 @@
+{% block content %}
+    <h1>Item &nbsp; Published Date &nbsp; Price &nbsp; Sells &nbsp; Total Price</h1>
+    
+    {% for choice in choice_list %}
+    <p>{{choice.choice_text}}  {{choice.pub_date}} {{choice.price}} {{choice.sells}} {{choice.compute}}</p>
+    {% endfor %}
+{% endblock %}
